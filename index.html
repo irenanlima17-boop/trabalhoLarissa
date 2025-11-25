@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>PixelNest — Pastel Gallery</title>
+    <link rel="stylesheet" href="styles/styleHome.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;600&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="header" role="banner">
+        <div class="header-inner">
+            <div class="logo">
+                <span class="mark" aria-hidden="true"></span>
+                PixelNest
+            </div>
+
+            <nav class="nav" role="navigation" aria-label="menu">
+                <a href="index.html">Home</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="sobre.html">Sobre</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" role="main">
+
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-left">
+                <div class="kicker">Coleção Pastel</div>
+                <h1 id="hero-title" class="hero-title">Fotografias suaves para inspirar seu dia</h1>
+                <p class="hero-lead">Uma curadoria de imagens com tons pastéis, perfeita para moodboards, portfolios e
+                    peças artísticas. Explore e salve suas favoritas.</p>
+
+                <div class="cta-row">
+                    <button class="btn" id="exploreBtn">Explorar Galeria</button>
+                    <button class="btn secondary" id="aboutBtn">Saiba Mais</button>
+                </div>
+            </div>
+
+            <aside class="hero-right" aria-hidden="true">
+                <div class="hero-grid" id="heroGrid">
+                </div>
+            </aside>
+        </section>
+
+        <section class="highlights" aria-label="Destaques">
+            <div class="card">
+                <h4>Curadoria semanal</h4>
+                <p class="muted">Selecionamos imagens novas a cada semana para manter sua inspiração sempre fresca.</p>
+            </div>
+            <div class="card">
+                <h4>Baixe em alta</h4>
+                <p class="muted">Opções de download em várias resoluções, pronto para usos profissionais.</p>
+            </div>
+            <div class="card">
+                <h4>Use grátis</h4>
+                <p class="muted">Imagens selecionadas para uso pessoal e educacional.</p>
+            </div>
+        </section>
+
+        <section class="preview" aria-label="Pré-visualização da galeria">
+            <h3 style="margin-top:0;margin-bottom:12px">Prévia da galeria</h3>
+
+            <div class="preview-grid" id="previewGrid">
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        © <span id="year"></span> PixelNest — Todos os direitos reservados
+    </footer>
+
+    <div class="overlay" id="overlay" role="dialog" aria-modal="true">
+        <button class="close-x" id="closeX" aria-label="Fechar">✕</button>
+        <img id="overlayImg" alt="imagem ampliada" />
+    </div>
+
+    <script src="scripts/scriptHome.js"></script>
+</body>
+
+</html>
