@@ -5,14 +5,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PixelNest</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="styles/styleSobre.css" />
 </head>
 
 <body>
-    <header class="header" id="site-header">
+    <header class="header" role="banner">
         <div class="header-inner">
-            <div class="logo">PixelNest</div>
-            <nav class="nav">
+            <div class="logo">
+                <img src="logo.png" class="mark">
+                PixelNest
+            </div>
+
+            <nav class="nav" role="navigation" aria-label="menu">
                 <a href="index.html">Home</a>
                 <a href="galeria.html">Galeria</a>
                 <a href="sobre.html">Sobre</a>
@@ -20,16 +25,63 @@
         </div>
     </header>
 
-    <main id="main">
-        <div class="gallery">
-            <div class="column" id="col1"></div>
-            <div class="column" id="col2"></div>
-            <div class="column" id="col3"></div>
-            <div class="column" id="col4"></div>
-        </div>
-    </main>
+    <!-- CONTAINER PRINCIPAL DA PÁGINA SOBRE -->
+    <div class="container-sobre">
+        <section class="intro">
+            <h1>Sobre o PixelNest</h1>
+            <p class="sub">
+                Um refúgio visual criado para quem ama estética suave, tons pastéis e composições harmoniosas.
+            </p>
+        </section>
 
-    <script src="script.js"></script>
+        <section class="texto">
+            <p>
+                O PixelNest nasceu da vontade de transformar imagens simples em refúgios visuais.
+                Aqui, cada foto é selecionada para transmitir leveza, calma e inspiração — o tipo de sensação
+                que faz você respirar fundo e apreciar pequenos detalhes.
+            </p>
+
+            <p>
+                Nosso objetivo é ser um espaço onde criatividade e serenidade coexistem. Seja para designers,
+                fotógrafos, amantes da estética minimalista ou qualquer pessoa buscando um momento de paz,
+                o PixelNest é um ninho feito para você.
+            </p>
+        </section>
+
+        <section class="cards-info">
+            <div class="card-item">
+                <h3>✨ Missão</h3>
+                <p>Curar imagens que inspirem equilíbrio, criatividade e contemplação.</p>
+            </div>
+            <div class="card-item">
+                <h3>🌿 Visão</h3>
+                <p>Ser referência em estética pastel e experiências visuais acolhedoras.</p>
+            </div>
+            <div class="card-item">
+                <h3>💗 Valores</h3>
+                <p>Suavidade, autenticidade, simplicidade e beleza nos pequenos detalhes.</p>
+            </div>
+        </section>
+
+        <section class="final">
+            <h2>Por que pastéis?</h2>
+            <p>
+                Tons pastéis acalmam, equilibram e criam um universo visual que não grita —
+                apenas aconchega. É por isso que o PixelNest existe: para ser aquele canto
+                suave da internet onde você sempre se sente bem.
+            </p>
+        </section>
+    </div>
+
+
+    <footer>
+        © <span id="year"></span> PixelNest — Todos os direitos reservados
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 </body>
+
 
 </html>
