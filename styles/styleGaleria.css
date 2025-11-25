@@ -29,6 +29,10 @@ body {
   border-bottom: 1px solid rgba(200, 190, 185, 0.6);
 }
 
+a {
+  text-decoration: none;
+}
+
 .header-inner {
   display: flex;
   align-items: center;

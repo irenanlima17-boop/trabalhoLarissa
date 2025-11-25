@@ -234,6 +234,10 @@
           cursor: pointer;
         }
 
+        a {
+          text-decoration: none;
+        }
+
         .preview-grid img:hover {
           transform: translateY(-6px) scale(1.02);
           filter: brightness(1.02);
